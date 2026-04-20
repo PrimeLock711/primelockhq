@@ -1,4 +1,4 @@
-import Playground from "../../../testing-world/Playground";
+import Playground from "../../../Playground";
 
 // Metadata for the sandbox (SEO focused but hidden)
 export const metadata = {
