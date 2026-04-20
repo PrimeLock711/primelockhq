@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /testing-world
+Disallow: /api/
+
+Sitemap: https://primelock.tech/sitemap.xml
