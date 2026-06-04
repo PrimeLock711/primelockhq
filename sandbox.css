@@ -1,0 +1,42 @@
+/* Isolated Design System for Testing World */
+:root {
+  --tw-obsidian: #050505;
+  --tw-glass-border: rgba(255, 255, 255, 0.08);
+  --tw-glass-bg: rgba(10, 10, 10, 0.4);
+  --tw-prism-accent: oklch(0.7 0.25 250); /* Neon Blue / Prism */
+  --tw-violet: oklch(0.6 0.2 300);
+}
+
+.tw-sandbox-root {
+  background-color: var(--tw-obsidian);
+  color: white;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+}
+
+.tw-glass {
+  background: var(--tw-glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--tw-glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+.tw-text-gradient {
+  background: linear-gradient(135deg, #fff 0%, var(--tw-prism-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tw-neon-border {
+  border: 1px solid var(--tw-prism-accent);
+  box-shadow: 0 0 15px var(--tw-prism-accent), inset 0 0 15px var(--tw-prism-accent);
+}
+
+@keyframes tw-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.tw-animate-float {
+  animation: tw-float 6s ease-in-out infinite;
+}
